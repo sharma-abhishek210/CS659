@@ -1,7 +1,7 @@
 # CS659
 
-Install Arduipilot
-Install ROS ( Robot operating system) 
+Install Arduipilot  
+Install ROS ( Robot operating system)   
 Install gazebo
 Install pre-trained YOLO model (darknet)
 
