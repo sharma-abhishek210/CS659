@@ -1,10 +1,9 @@
 # Obstacle Avoidance in Quadcopter
 
 Install Ardupilot and MAVProxy  
-Install QGroundControl  
-Install Gazebo and ArduPilot Plugin  
+Install QGroundControl    
 Install ROS and MAVROS  
-Install gazebo  ( use `git clone https://github.com/osrf/gazebo_models.git` to get open source gaazebo models )  
+Install gazebo  ( use `git clone https://github.com/osrf/gazebo_models.git` to get open source gazebo models )  
 Install pre-trained YOLO/Darknet (in file `ros.yaml`  change the image topic from `/camera/rgb/image_raw` to `/webcam/image_raw`)
   
 ##  For 1 drone obstacle avoidance   
