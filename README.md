@@ -21,7 +21,7 @@ run commands in different terminals =>
     
     We have to use the command `catkin build` to create avoid executable file from avoidance_sol.cpp file
 4) `rosrun iq_gnc avoidance_sol`   // to run avoid executable file which helps to avoid collision with obstacle.    
-5) `rosrun iq_gnc sub ` // to run yolo
+5) `rosrun iq_gnc subscriber_sol ` // to run yolo
   
 ##  For 2 drones obstacle avoidance  
 
