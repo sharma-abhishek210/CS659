@@ -4,7 +4,7 @@ Installing Ardupilot and MAVProxy
 Installing QGroundControl  
 Installing Gazebo and ArduPilot Plugin  
 Installing ROS and MAVROS  
-Install gazebo  ( use `git clone https://github.com/osrf/gazebo_models.git` to get open source gaazebo models )
+Install gazebo  ( use `git clone https://github.com/osrf/gazebo_models.git` to get open source gaazebo models )  
 Install pre-trained YOLO/Darknet  
   
 ##  for 1 drone obstacle avoidance   
