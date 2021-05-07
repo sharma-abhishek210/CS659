@@ -11,16 +11,16 @@ Install pre-trained YOLO/Darknet (in file `ros.yaml`  change the image topic fro
 run commands in different terminals =>  
 
 1) `roslaunch iq_sim onedrone.launch`  //  here we run the gazebo world to create environment  
-2) `run ./startsitl.sh`  
+2) `./startsitl.sh`  
     in the same terminal run other commands to control drone,  
     `mode guided`  
     `arm throttle`  
     `take off 15`    // 15 is height, you can change accordingly  
     `position x y z`  // to move drone from current position to some point with coordinates x, y, z
-3) `run roslaunch iq_sim apm.launch`  
+3) `roslaunch iq_sim apm.launch`  
     
     We have to use the command `catkin build` to create avoid executable file from avoidance_sol.cpp file
-4) `run rosrun iq_gnc avoidance_sol`   // to run avoid executable file which helps to avoid collision with obstacle.    
+4) `rosrun iq_gnc avoidance_sol`   // to run avoid executable file which helps to avoid collision with obstacle.    
 5) `rosrun iq_gnc sub ` // to run yolo
   
 ##  For 2 drones obstacle avoidance  
