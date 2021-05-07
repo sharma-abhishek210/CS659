@@ -7,7 +7,7 @@ Installing ROS and MAVROS
 Install gazebo  ( use `git clone https://github.com/osrf/gazebo_models.git` to get open source gaazebo models )  
 Install pre-trained YOLO/Darknet  
   
-##  for 1 drone obstacle avoidance   
+##  For 1 drone obstacle avoidance   
 run commands in different terminals =>  
 
 1) `roslaunch iq_sim onedrone.launch`  //  here we run the gazebo world to create environment  
@@ -23,7 +23,7 @@ run commands in different terminals =>
 4) `run rosrun iq_gnc avoid`   // to run avoid executable file which helps to avoid collision with obstacle.    
 5) `rosrun iq_gnc sub ` // to run yolo
   
-##  for 2 drones obstacle avoidance  
+##  For 2 drones obstacle avoidance  
 
 change command line 2 to ;  
 `sim_vehicle.py -v ArduCopter -f gazebo-drone1 --console -It --out=tcpin:0.0.0.0:x` ( where x is avaiable port and t is drone number)  
