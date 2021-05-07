@@ -4,7 +4,7 @@ Installing Ardupilot and MAVProxy
 Installing QGroundControl  
 Installing Gazebo and ArduPilot Plugin  
 Installing ROS and MAVROS  
-Install gazebo  
+Install gazebo  ( use `git clone https://github.com/osrf/gazebo_models.git` to get open source gaazebo models )
 Install pre-trained YOLO/Darknet  
   
 ##  for 1 drone obstacle avoidance   
@@ -21,6 +21,7 @@ run commands in different terminals =>
     
     We have to use the command `catkin build` to create avoid executable file from avoid.cpp file
 4) `run rosrun iq_gnc avoid`   // to run avoid executable file which helps to avoid collision with obstacle.    
+5) `rosrun iq_gnc sub ` // to run yolo
   
 ##  for 2 drones obstacle avoidance  
 
