@@ -1,21 +1,35 @@
-# CS659
+# Obstacle Avoidance in Quadcopter
 
-Install Arduipilot  
-Install ROS ( Robot operating system)   
+Installing Ardupilot and MAVProxy  
+Installing QGroundControl  
+Installing Gazebo and ArduPilot Plugin  
+Installing ROS and MAVROS  
 Install gazebo  
-Install pre-trained YOLO model (darknet)  
+Install pre-trained YOLO/Darknet  
   
-run arduipilot   
-run gazebo wolrd.xml   //  here we run the gazebo world to create environment e.g. hills  
-run ./startsitl.sh  
-run roslaunch iq_sim apm.launch  
-run rosrun iq_gnc avoid   // to run  avoid.cpp code    
+##  for 1 drone obstacle avoidance   
+run commands in different terminals =>  
+
+1) `roslaunch iq_sim onedrone.launch`  //  here we run the gazebo world to create environment  
+2) `run ./startsitl.sh`  
+    in the same terminal run other commands to control drone,  
+    `mode guided`  
+    `arm throttle`  
+    `take off 15`    // 15 is height, you can change accordingly  
+    `position x y z`  // to move drone from current position to some point with coordinates x, y, z
+3) `run roslaunch iq_sim apm.launch`  
+    
+    We have to use the command `catkin build` to create avoid executable file from avoid.cpp file
+4) `run rosrun iq_gnc avoid`   // to run avoid executable file which helps to avoid collision with obstacle.    
   
-//  for 2 drones  
-   
-just change line 10 to => sim_vehicle.py -v ArduCopter -f gazebo-iris --console -It (t depend upon number of the drone) --out=tcpin:0.0.0.0:x(x is any available port)   
+##  for 2 drones obstacle avoidance  
+
+change command line 2 to ;  
+`sim_vehicle.py -v ArduCopter -f gazebo-drone1 --console -It --out=tcpin:0.0.0.0:x` ( where x is avaiable port and t is drone number)  
+e.g.  
+for drone 1 : `sim_vehicle.py -v ArduCopter -f gazebo-drone1 --console -I0 --out=tcpin:0.0.0.0:8100 `  
+for drone 2 : `sim_vehicle.py -v ArduCopter -f gazebo-drone2 --console -I1 --out=tcpin:0.0.0.0:8200 `
 
 
-//
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 simulations are uploaded in github also in case given link in pdf doesn't work
